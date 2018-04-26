@@ -63,7 +63,8 @@ public class Generate {
         if (parent1.length() != parent2.length()) throw new RuntimeException("Parents size don't match");
         int endIndexP1 = parent1.length() / 2;
         if (parent1.length() % 2 != 0) {
-            endIndexP1++;
+            return parent1.substring(0, endIndexP1+1) +
+                    parent2.substring((parent2.length() / 2) + 1, parent2.length());
         }
         return parent1.substring(0, endIndexP1) +
                 parent2.substring(parent2.length() / 2, parent2.length());

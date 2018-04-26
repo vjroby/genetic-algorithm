@@ -53,3 +53,7 @@ jacocoTestCoverageVerification {
     }
 }
 
+plugins {
+    id "com.github.kt3k.coveralls" version "2.8.2"
+}
+

@@ -1,4 +1,4 @@
-package ro.robertgabriel;
+package ro.robertgabriel.geneticalgorithm;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,9 +7,7 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotSame;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 @RunWith(BlockJUnit4ClassRunner.class)
 public class GenerateTest {

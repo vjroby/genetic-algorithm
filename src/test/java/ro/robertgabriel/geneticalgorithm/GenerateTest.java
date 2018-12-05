@@ -5,7 +5,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
 import java.util.Arrays;
-import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -66,11 +65,11 @@ public class GenerateTest {
     @Test
     public void shouldGenerateNewPopulation() throws Exception {
         String solution = "4ufew1813kca";
-        List<String> oldPopulation = Arrays.asList("4ufew181pkzx", "4ufev1354321", "41fev1354321", "01fev1354321",
+        var oldPopulation = Arrays.asList("4ufew181pkzx", "4ufev1354321", "41fev1354321", "01fev1354321",
                 "01fev1354321", "01fev135d321", "01fev1354b21", "01fev1354m21", "01fev13543q1", "01fev13543a1"
         );
 
-        List<String> generated = Generate.generateNewPopulation(oldPopulation, solution);
+        var generated = Generate.generateNewPopulation(oldPopulation, solution);
 
         boolean a = generated.contains("4ufew181pkzx");
         assertTrue(a);

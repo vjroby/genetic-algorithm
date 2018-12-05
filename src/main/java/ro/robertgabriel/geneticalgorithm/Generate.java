@@ -18,7 +18,7 @@ public class Generate {
     }
 
     public static String chromosome(int size) {
-        StringBuilder sb = new StringBuilder();
+        var sb = new StringBuilder();
         for (int i = 0; i < size; i++) {
             sb.append(randomLetter());
         }
@@ -49,8 +49,8 @@ public class Generate {
     public static List<Chromosome> selectChromosomes(List<String> chromosomes, String solution) {
         int limitBest = (int) (chromosomes.size() * BEST_FIT_PERCENT);
         int rest = (int) (chromosomes.size() * NON_FIT_PERCENT);
-        List<Chromosome> all = scoredSorted(chromosomes, solution);
-        List<Chromosome> firstFit = all.subList(0, limitBest);
+        var all = scoredSorted(chromosomes, solution);
+        var firstFit = all.subList(0, limitBest);
 
         List<Chromosome> notFit = all.subList(limitBest, all.size() - 1);
         Collections.shuffle(notFit);

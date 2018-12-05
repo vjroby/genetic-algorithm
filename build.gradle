@@ -14,7 +14,7 @@ apply plugin: "jacoco"
 
 mainClassName = "ro.robertgabriel.Application"
 
-sourceCompatibility = 9
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
